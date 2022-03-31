@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-image: url(hookshotBackground256x224.png);
+            background-size: 180%;
+            background-attachment: fixed;
+            background-position: right;
+        }
+
+        #header{
+            background-color: rgba(62, 46, 87, 0.8);
+            display: flex;
+            width: 100%;
+            position: fixed;
+            padding: 10px;
+        }
+
+        #divImage{
+            display: flex;
+            width: 50%;
+            justify-content: left;
+        }
+
+        #header-img {
+            width: 24px;
+            height: auto;
+        }
+
+        #nav-bar{
+            display: flex;
+            width: 50%;
+            justify-content: right; 
+            text-align: center;
+            align-items: center;
+        }
+
+        .nav-link{
+            background-color: rgb(77, 127, 146);
+            border: solid;
+            border-color: black;
+            width: 22%
+        }  
+
+        a {
+            border-radius: 5px;
+            margin-right: 20px;
+            color: white;
+            padding: 6px;
+        }
+
+        #title {
+            text-align: center;
+            padding-top: 100px;
+            color: white;
+        }
+
+        #title1 {
+            font-size: 36px;
+        }
+
+        #title2 {
+            font-size: 48px;
+        }
+
+        #form {
+            background-color: rgba(255, 255, 0, 0.5);
+            text-align: center;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 50px;
+        }
+
+        #email {
+            text-align: center;
+        }
+
+        #features {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #feature1 {
+            background-color: rgba(255, 255, 0, 0.5);
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8px;
+            align-items: center;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        #feature2 {
+            background-color: rgba(255, 255, 0, 0.5);
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8px;
+            align-items: center;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        #feature3 {
+            background-color: rgba(255, 255, 0, 0.5);
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        .featureImages {
+            width: auto;
+            height: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .featureHeaders {
+            padding: 8px;
+        }
+
+        .featureDescriptions {
+            padding: 8px;
+        }
+
+        .featuresTextAlign {
+            width: 100%;
+            text-align: center;
+        }
+
+        #howItWorks {
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        #pricing {
+            display: flex;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        .price {
+            background-color: rgba(255, 255, 0, 0.5);
+            border-radius: 5px;
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        ul{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li {
+            width: fit-content;
+        }
+
+        @media (max-width: 1000px) {
+            #pricing {
+                flex-direction: column;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .price {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .price {
+                width: 75%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="divImage">
+            <img id="header-img" src="hookshot14x32.png">
+        </div>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#howItWorks">How It Works</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+    
+    <h1 id="title"><span id="title1">Whats Better Than A Hookshot</span><br><span id="title2">NOTHING SHORT OF A LONGSHOT</span></h1>
+    <br>
+    
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <br>
+        <br>
+        <input id="submit" type="submit" value="Reach Out">
+    </form>
+    <br>
+    
+    <div id="features">
+        <div id="feature1">
+            <img class="featureImages" id="feature1Img" src="hookshot14x32.png">
+            <div class="featuresTextAlign">
+                <h2 class="featureHeaders" id="feature1Header">Premium Materials</h2>
+                <p class="featureDescriptions" id="feature1Description">Made with Hyrulian steel forged in the fires of Death Mountain</p>
+            </div>
+        </div>
+
+        <div id="feature2">
+            <img class="featureImages" id="feature2Img" src="hookshot14x32.png">
+            <div class="featuresTextAlign">
+                <h2 class="featureHeaders" id="feature2Header">Fast Shipping</h2>
+                <p class="featureDescriptions" id="feature2Description">We hookshot it straight into your front door</p>
+            </div>
+        </div>
+
+        <div id="feature3">
+            <img class="featureImages" id="feature3Img" src="hookshot14x32.png">
+            <div class="featuresTextAlign">
+                <h2 class="featureHeaders" id="feature3Header">Quality Assurance</h2>
+                <p class="featureDescriptions" id="feature3Description">The hero of time cant break this</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+    <div id="howItWorks">
+        <iframe id="video" src="https://www.youtube.com/embed/JJS1FcMdOCY" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br>
+
+    <div id="pricing">
+        <div id="div249" class="price">
+            <h2 id="hookshot">HOOKSHOT</h2>
+            <h3 id="249rupees">249 Rupees</h3>
+            <ul id="list1">
+                <li>12 foot reach</li>
+                <li>Blue</li>
+            </ul>
+            <input id="selectHookshot" type="button" value="SELECT">
+        </div>
+
+        <div id="div499" class="price">
+            <h2 id="hookshot+">HOOKSHOT+</h2>
+            <h3 id="499rupees">499 Rupees</h3>
+            <ul id="list2">
+                <li>24 foot reach</li>
+                <li>Blue or Red</li>
+            </ul>
+            <input id="selectHookshot+" type="button" value="SELECT">
+        </div>
+
+        <div id="div999" class="price">
+            <h2 id="longshot">LONGSHOT</h2>
+            <h3 id="999rupees">999 Rupees</h3>
+            <ul id="list3">
+                <li>48 foot reach</li>
+                <li>Blue, Red, Silver or Gold</li>
+            </ul>
+            <input id="selectLongshot" type="button" value="SELECT">
+        </div>
+    </div>
+</body>
+
+</html>
